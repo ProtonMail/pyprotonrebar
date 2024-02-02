@@ -1,0 +1,61 @@
+# This file exists so you can easily regenerate your project.
+#
+# `cookiepatcher` is a convenient shim around `cookiecutter`
+# for regenerating projects (it will generate a .cookiecutterrc
+# automatically for any template). To use it:
+#
+#    pip install cookiepatcher
+#    cookiepatcher gh:ionelmc/cookiecutter-pylibrary pyprotonrebar
+#
+# See:
+#    https://pypi.org/project/cookiepatcher
+#
+# Alternatively, you can run:
+#
+#    cookiecutter --overwrite-if-exists --config-file=pyprotonrebar/.cookiecutterrc gh:ionelmc/cookiecutter-pylibrary
+
+default_context:
+    allow_tests_inside_package: "no"
+    c_extension_function: "longest"
+    c_extension_module: "_pyrackndr"
+    c_extension_optional: "no"
+    c_extension_support: "no"
+    codacy: "no"
+    codacy_projectid: "[Get ID from https://app.codacy.com/gh/spaduraru/pyprotonrebar/settings]"
+    codeclimate: "no"
+    codecov: "yes"
+    command_line_interface: "no"
+    command_line_interface_bin_name: "pyrackndr"
+    coveralls: "no"
+    distribution_name: "pyrackndr"
+    email: "spaduraru@proton.ch"
+    formatter_quote_style: "single"
+    full_name: "Sorin-Alexandru Paduraru"
+    github_actions: "no"
+    github_actions_osx: "no"
+    github_actions_windows: "no"
+    license: "MIT license"
+    package_name: "pyrackndr"
+    pre_commit: "yes"
+    project_name: "ProtonRebar"
+    project_short_description: "Interact with the RackN Digital Rebar API"
+    pypi_badge: "no"
+    pypi_disable_upload: "yes"
+    release_date: "today"
+    repo_hosting: "other domain not listed"
+    repo_hosting_domain: "gitlab.protontech.ch"
+    repo_main_branch: "main"
+    repo_name: "pyprotonrebar"
+    repo_username: "spaduraru"
+    scrutinizer: "no"
+    setup_py_uses_setuptools_scm: "no"
+    sphinx_docs: "no"
+    sphinx_docs_hosting: "https://pyprotonrebar.readthedocs.io/"
+    sphinx_doctest: "no"
+    sphinx_theme: "sphinx-rtd-theme"
+    test_matrix_separate_coverage: "no"
+    version: "0.0.0"
+    version_manager: "bump2version"
+    website: "https://proton.me"
+    year_from: "2024"
+    year_to: "2024"
