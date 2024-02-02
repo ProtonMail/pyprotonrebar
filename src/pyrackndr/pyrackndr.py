@@ -76,7 +76,8 @@ class RackNDr:
     '''
     api = f"{self.api}/{self.resource}/{rname}"
 
-    r = requests.head(
+    # HEAD is enough for newer API versions
+    r = requests.get(
       api,
       headers=self.headers,
       verify=self.tls_verify
