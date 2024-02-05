@@ -87,7 +87,7 @@ CONSTANTS = {
       "icon": "file code outline",
       "title": "User added"
     },
-    "ReadOnly": False,
+    "ReadOnly": True,
     "Validated": True
   }
 }
