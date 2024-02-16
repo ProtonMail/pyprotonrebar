@@ -89,5 +89,36 @@ CONSTANTS = {
     },
     "ReadOnly": True,
     "Validated": True
+  },
+  'tasks':
+  {
+    "Available": True,
+    "Bundle": "string",
+    "Description": None,
+    "Documentation": None,
+    "Endpoint": "",
+    "Errors": [],
+    "ExtraClaims": [],
+    "ExtraRoles": [],
+    "Name": None,
+    "Meta": {},
+    "OptionalParams": [],
+    "OutputParams": [],
+    "Prerequisites": [],
+    "ReadOnly": True,
+    "RequiredParams": [],
+    "Templates": [
+      {
+        "Contents": None,
+        "EndDelimiter": None,
+        "ID": None,
+        "Link": None,
+        "Meta": {},
+        "Name": None,
+        "Path": None,
+        "StartDelimiter": None
+      }
+    ],
+    "Validated": True
   }
 }
