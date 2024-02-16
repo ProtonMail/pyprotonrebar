@@ -62,6 +62,10 @@ class RackNDr:
     self.resource = resource
     self.dryrun = False
     self.tls_verify = True
+    self.ignore_keys = {
+      'local':  [],
+      'remote': []
+    }
 
 
   def exists(self, rname):
@@ -171,6 +175,16 @@ class RackNDr:
 
     return results
 
+  def pop_keys(self, obj, list_of_items_to_pop = None):
+    '''Takes dict object and list of items to pop and pops items if they
+    exist in dict.
+    '''
+    if list_of_items_to_pop is None:
+      list_of_items_to_pop = []
+
+    for i in list_of_items_to_pop:
+      obj.pop(i, None)
+
 
   def update(self, rname, lobject):
     '''Takes resource name and local object and returns dict containing
@@ -178,6 +192,11 @@ class RackNDr:
     '''
     results = {}
     remote_object = json.loads(self.get_resource(rname).text)
+
+
+    self.pop_keys(lobject, self.ignore_keys['local'])
+    self.pop_keys(remote_object, self.ignore_keys['remote'])
+
     diff = generate_resource_diff(remote_object, lobject)
 
     if diff:
@@ -206,6 +225,8 @@ class RackNDr:
     changed and message.
     '''
     results = {}
+    self.pop_keys(lobject, self.ignore_keys['local'])
+
     if self.dryrun:
       results = {**results, **DRYRUN}
       results['changed'] = True
