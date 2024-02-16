@@ -14,7 +14,7 @@ def read(*names, **kwargs):
 setup(
     name="pyrackndr",
     version="0.0.0",
-    license="MIT",
+    license="Apache-2.0",
     description="Interact with the RackN Digital Rebar API",
     long_description="{}\n{}".format(
         re.compile("^.. start-badges.*^.. end-badges", re.M | re.S).sub("", read("README.rst")),
@@ -32,7 +32,7 @@ setup(
         # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
         "Development Status :: 5 - Production/Stable",
         "Intended Audience :: Developers",
-        "License :: OSI Approved :: MIT License",
+        "License :: OSI Approved :: Apache Software License",
         "Operating System :: Unix",
         "Operating System :: POSIX",
         "Operating System :: Microsoft :: Windows",

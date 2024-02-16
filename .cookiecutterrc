@@ -34,7 +34,7 @@ default_context:
     github_actions: "no"
     github_actions_osx: "no"
     github_actions_windows: "no"
-    license: "MIT license"
+    license: "Apache Software License 2.0"
     package_name: "pyrackndr"
     pre_commit: "yes"
     project_name: "ProtonRebar"
