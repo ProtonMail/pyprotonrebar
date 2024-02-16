@@ -21,7 +21,7 @@ default_context:
     c_extension_optional: "no"
     c_extension_support: "no"
     codacy: "no"
-    codacy_projectid: "[Get ID from https://app.codacy.com/gh/spaduraru/pyprotonrebar/settings]"
+    codacy_projectid: ""
     codeclimate: "no"
     codecov: "yes"
     command_line_interface: "no"
