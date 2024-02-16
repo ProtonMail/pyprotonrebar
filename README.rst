@@ -4,7 +4,7 @@ Overview
 
 Interact with the RackN Digital Rebar API
 
-* Free software: MIT license
+* Free software: Apache Software License 2.0
 
 Installation
 ============
@@ -26,7 +26,7 @@ To use the project:
 .. code-block:: python
 
     import pyrackndr
-    pyrackndr.longest()
+    pyrackndr.CONSTANTS
 
 
 Development
