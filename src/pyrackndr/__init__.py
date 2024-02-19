@@ -93,7 +93,7 @@ CONSTANTS = {
   'tasks':
   {
     "Available": True,
-    "Bundle": "string",
+    "Bundle": "",
     "Description": None,
     "Documentation": None,
     "Endpoint": "",
