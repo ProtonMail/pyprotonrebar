@@ -37,7 +37,7 @@ To use the project, for example, to create a new Param:
         AUTH,
         'params')
 
-    data = pyrackndr.CONSTANTS['params']
+    data = pyrackndr.CONSTANTS['params'].copy()
     data['Description'] = 'new-param description goes here'
     data['Documentation'] = 'new-param documentation goes here'
     data['Name'] = 'new-param'
