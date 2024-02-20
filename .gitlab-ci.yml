@@ -1,0 +1,22 @@
+---
+stages:
+  - test
+
+default:
+  tags:
+    - shared-small
+  before_script:
+    - pip install -U pip
+    - pip install tox
+
+python3.10:
+  image: ${CONTAINER_HOST}/docker.io/library/python:3.10.13-bookworm
+  stage: test
+  script:
+    - tox
+
+python3.11-12:
+  image: ${CONTAINER_HOST}/docker.io/library/python:3.12.2-bookworm
+  stage: test
+  script:
+    - tox
