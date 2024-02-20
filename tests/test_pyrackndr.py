@@ -1,6 +1,9 @@
+from pyrackndr import pyrackndr
 
 
-from pyrackndr import main
+def test_class_init():
+    """Assert the class is initialized with the proper Rebar object."""
+    auth = {'Token': 'phony'}
+    obj = pyrackndr.RackNDr('https://localhost:8092', auth, 'params')
 
-def test_main():
-    pass
+    assert obj.resource == 'params'
