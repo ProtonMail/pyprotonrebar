@@ -43,7 +43,7 @@ default_context:
     pypi_disable_upload: "yes"
     release_date: "today"
     repo_hosting: "other domain not listed"
-    repo_hosting_domain: "gitlab.protontech.ch"
+    repo_hosting_domain: "github.com"
     repo_main_branch: "main"
     repo_name: "pyprotonrebar"
     repo_username: "spaduraru"

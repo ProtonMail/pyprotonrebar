@@ -22,7 +22,7 @@ setup(
     ),
     author='Sorin-Alexandru Paduraru',
     author_email='spaduraru@proton.ch',
-    url='https://gitlab.protontech.ch/spaduraru/pyprotonrebar',
+    url='https://github.com/ProtonMail/pyprotonrebar',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     py_modules=[path.stem for path in Path('src').glob('*.py')],
@@ -54,8 +54,8 @@ setup(
         'Private :: Do Not Upload',
     ],
     project_urls={
-        'Changelog': 'https://gitlab.protontech.ch/spaduraru/pyprotonrebar/blob/master/CHANGELOG.rst',
-        'Issue Tracker': 'https://gitlab.protontech.ch/spaduraru/pyprotonrebar/issues',
+        'Changelog': 'https://github.com/ProtonMail/pyprotonrebar/blob/master/CHANGELOG.rst',
+        'Issue Tracker': 'https://github.com/ProtonMail/pyprotonrebar/issues',
     },
     keywords=[
         # eg: "keyword1", "keyword2", "keyword3",
