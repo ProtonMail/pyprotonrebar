@@ -1,3 +1,5 @@
+exclude .gitlab-ci.yml
+
 graft docs
 graft src
 graft ci
