@@ -3,6 +3,7 @@ Interact with the RackN Digital Rebar API.
 """
 
 import json
+from typing import ClassVar
 
 import jsonpatch
 import requests
@@ -42,7 +43,7 @@ DRYRUN = {'http_code': 200, 'message': 'DRYRUN'}
 class RackNDr:
     """Interact with RackN Digital Rebar objects."""
 
-    headers = {
+    headers: ClassVar[dict] = {
         'Content-Type': 'application/json',
     }
 
