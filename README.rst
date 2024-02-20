@@ -21,7 +21,10 @@ Documentation
 =============
 
 
-To use the project, for example, to create a new Param:
+While primarily intended as common code for
+https://github.com/ProtonMail/proton.rackndr, it can also be used as is.
+
+For example, to use the project to create a new Param:
 
 .. code-block:: python
 
