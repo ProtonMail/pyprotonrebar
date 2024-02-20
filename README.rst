@@ -15,18 +15,39 @@ Installation
 
 You can also install the in-development version with::
 
-    pip install git+ssh://git@gitlab.protontech.ch/spaduraru/pyprotonrebar.git@main
+    pip install git+ssh://git@github.com/ProtonMail/pyprotonrebar.git@main
 
 Documentation
 =============
 
 
-To use the project:
+To use the project, for example, to create a new Param:
 
 .. code-block:: python
 
-    import pyrackndr
-    pyrackndr.CONSTANTS
+    import pyrackndr.pyrackndr
+    TOKEN = pyrackndr.pyrackndr.fetch_token_requests(
+        'superuser',
+        'user:pass',
+        'https://localhost:8092')
+    AUTH = TOKEN['header']
+
+    rebar_object = pyrackndr.pyrackndr.RackNDr(
+        'https://localhost:8092',
+        AUTH,
+        'params')
+
+    data = pyrackndr.CONSTANTS['params']
+    data['Description'] = 'new-param description goes here'
+    data['Documentation'] = 'new-param documentation goes here'
+    data['Name'] = 'new-param'
+    data['Secure'] = False
+    data['Schema'] = {
+      'type': 'string',
+      'default': 'hello'
+    }
+
+    rebar_object.create(data)
 
 
 Development
