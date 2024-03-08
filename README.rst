@@ -2,7 +2,8 @@
 Overview
 ========
 
-Interact with the RackN Digital Rebar API
+Interact with the RackN Digital Rebar API (in a way that's useful *to
+us*).
 
 * Free software: Apache Software License 2.0
 
