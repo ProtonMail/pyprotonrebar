@@ -13,13 +13,14 @@ def read(*names, **kwargs):
 
 setup(
     name='pyprotonrebar',
-    version='0.0.0',
+    version='0.0.1',
     license='Apache-2.0',
     description='Interact with the RackN Digital Rebar API',
     long_description='{}\n{}'.format(
         re.compile('^.. start-badges.*^.. end-badges', re.M | re.S).sub('', read('README.rst')),
         re.sub(':[a-z]+:`~?(.*?)`', r'``\1``', read('CHANGELOG.rst')),
     ),
+    long_description_content_type='text/x-rst',
     author='Sorin-Alexandru Paduraru',
     author_email='spaduraru@proton.ch',
     url='https://github.com/ProtonMail/pyprotonrebar',
@@ -51,7 +52,6 @@ setup(
         # "Programming Language :: Python :: Implementation :: Jython",
         # "Programming Language :: Python :: Implementation :: Stackless",
         'Topic :: Utilities',
-        'Private :: Do Not Upload',
     ],
     project_urls={
         'Changelog': 'https://github.com/ProtonMail/pyprotonrebar/blob/master/CHANGELOG.rst',
