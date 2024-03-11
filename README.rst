@@ -12,7 +12,7 @@ Installation
 
 ::
 
-    pip install pyrackndr
+    pip install pyprotonrebar
 
 You can also install the in-development version with::
 
@@ -29,19 +29,19 @@ For example, to use the project to create a new Param:
 
 .. code-block:: python
 
-    import pyrackndr.pyrackndr
-    TOKEN = pyrackndr.pyrackndr.fetch_token_requests(
+    import pyprotonrebar.pyrackndr
+    TOKEN = pyprotonrebar.pyrackndr.fetch_token_requests(
         'superuser',
         'user:pass',
         'https://localhost:8092')
     AUTH = TOKEN['header']
 
-    rebar_object = pyrackndr.pyrackndr.RackNDr(
+    rebar_object = pyprotonrebar.pyrackndr.RackNDr(
         'https://localhost:8092',
         AUTH,
         'params')
 
-    data = pyrackndr.CONSTANTS['params'].copy()
+    data = pyprotonrebar.CONSTANTS['params'].copy()
     data['Description'] = 'new-param description goes here'
     data['Documentation'] = 'new-param documentation goes here'
     data['Name'] = 'new-param'

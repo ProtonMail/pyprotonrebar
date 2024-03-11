@@ -12,7 +12,7 @@ def read(*names, **kwargs):
 
 
 setup(
-    name='pyrackndr',
+    name='pyprotonrebar',
     version='0.0.0',
     license='Apache-2.0',
     description='Interact with the RackN Digital Rebar API',

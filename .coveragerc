@@ -6,7 +6,7 @@ source =
 [run]
 branch = true
 source =
-    pyrackndr
+    pyprotonrebar
     tests
 parallel = true
 

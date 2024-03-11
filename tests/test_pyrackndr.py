@@ -1,4 +1,4 @@
-from pyrackndr import pyrackndr
+from pyprotonrebar import pyrackndr
 
 
 def test_class_init():
